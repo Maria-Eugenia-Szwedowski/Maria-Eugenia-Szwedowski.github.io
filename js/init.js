@@ -174,7 +174,20 @@ var eric = function (){
 	
 	/*Typed js start*/
 	$("#typed").typed({
-		strings: ["^2100&nbsp;Electricista.<br/> Programador de Código G. "],
+		strings: ["^2100&nbsp;Técnico Electricista y Developer.<br/>Operador Inmobiliario y Rematador Público. "],
+		typeSpeed: 30,
+		backDelay: 750,
+		loop: false,
+		cursorChar: "|",
+		contentType: 'html', // or text
+		// defaults to false for infinite loop
+		loopCount: false
+	});
+	/*Typed js end*/
+
+	/*Typed js start*/
+	$("#typed2").typed({
+		strings: ["^2100&nbsp;Technical Electrician. Developer<br/>Real Estate Business and Auctioneer. "],
 		typeSpeed: 30,
 		backDelay: 750,
 		loop: false,
