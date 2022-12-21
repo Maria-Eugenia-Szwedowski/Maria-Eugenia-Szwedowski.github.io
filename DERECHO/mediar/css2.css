@@ -146,6 +146,10 @@ a {
     color: #d1739f;
   }
 
+   .jumbotron.rosa-fdo{
+    background-color: #d1739f;
+  }
+
   .hover-1 {
     --c: #d1739f; /* the color */
     --b: .1em;    /* border length*/
