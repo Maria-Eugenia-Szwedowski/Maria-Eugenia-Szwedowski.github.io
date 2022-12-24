@@ -8,6 +8,11 @@ function limpiar() {
 
 } 
 
+function sumarDias(fecha, dias){
+    fecha.setDate(fecha.getDate() + dias);
+    return fecha;
+  }
+
 function calcular() {   
     
     const feriados = [
@@ -36,8 +41,12 @@ function calcular() {
       ];
     
     var fInicial = document.getElementById('fInicial').value;
-    var dHabilSiguiente = new Date(Date.parse(fInicial));
+    var fInicial2 = new Date(Date.parse(fInicial));
+    const fInicial3 = sumarDias( fInicial2 , 1 );
+   
+    var dHabilSiguiente = new Date(Date.parse(fInicial3)); 
     const diaInicial = calculaHabilesTotales(dHabilSiguiente, 1, feriados);
+
     const dInicialTram = diaInicial.getDate() + '/' + 
                         (diaInicial.getMonth()+1) + '/' + 
                         diaInicial.getFullYear() ;
