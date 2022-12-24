@@ -25,9 +25,25 @@ function calcular() {
         [], //Noviembre
         [25,26,27,28,29,30,31] //Diciembre
     ];
+    
+    const dSemana = [
+        'domingo',
+        'lunes',
+        'martes',
+        'miércoles',
+        'jueves',
+        'viernes',
+        'sábado',
+      ];
+    
     var fInicial = document.getElementById('fInicial').value;
     var dHabilSiguiente = new Date(Date.parse(fInicial));
     const diaInicial = calculaHabilesTotales(dHabilSiguiente, 1, feriados);
+    const dInicialTram = diaInicial.getDate() + '/' + 
+                        (diaInicial.getMonth()+1) + '/' + 
+                        diaInicial.getFullYear() ;
+
+    const dInicialSem = dSemana[diaInicial.getDay()];
 
     const diasTramite = parseInt(document.getElementById('dias').value);
     const resultado = calculaHabilesTotales(diaInicial, diasTramite, feriados);
@@ -36,7 +52,14 @@ function calcular() {
             (resultado.getMonth() + 1) + '/' + 
              resultado.getFullYear();
 
+    const nombreDia = dSemana[resultado.getDay()];
+
+    document.getElementById('dInicial').innerHTML = dInicialTram;
+    document.getElementById('dSemInicial').innerHTML = dInicialSem;
+
     document.getElementById('fFinal').innerHTML = resulta;
+    document.getElementById('dSemana').innerHTML = nombreDia;
+
     var caja = document.getElementById("mostrar");
     mostrar.style.display = "block";
 
