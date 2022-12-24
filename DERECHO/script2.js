@@ -8,7 +8,6 @@ function limpiar() {
 
 } 
 
-
 function calcular() {   
     
     const feriados = [
