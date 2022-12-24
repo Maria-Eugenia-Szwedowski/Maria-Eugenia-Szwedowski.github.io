@@ -1,64 +1,46 @@
+// Excluye sábados y domingos.
+const addWeekDays = (startDate, count) =>
+     Array.from({ length: count }).reduce(date => {
+     date = new Date(date.setDate(date.getDate() + 1));
+    if (date.getDay() % 6 === 0 )
+      date = new Date(date.setDate(date.getDate() + (date.getDay() / 6 + 1) ));
+    return date;
+     }, startDate);
 
-function calcular() {   
-    
-  const feriados = [
-      [1], //Enero
-      [],  // Febrero
-      [], // Marzo
-      [], // Abril
-      [1], // Mayo
-      [], //Junio
-      [18], //Julio
-      [25], // Agosto
-      [], //Septiembre
-      [], //Octubre
-      [], //Noviembre
-      [25] //Diciembre
-  ];
-  var fInicial = document.getElementById('fInicial').value;
-  var dHabilSiguiente = new Date(Date.parse(fInicial));
-  const diaInicial = calculaHabilesTotales(dHabilSiguiente, 0, feriados);
 
-  const diasTramite = parseInt(document.getElementById('dias').value);
-  const resultado = calculaHabilesTotales(diaInicial, diasTramite, feriados);
+  function limpiar() {
+      document.getElementById('fInicial').innerHTM= '' ;
+   
+      document.getElementById('dias').innerHTM= ''; 
   
-  resulta = resultado.getDate() + '/' +
-          (resultado.getMonth() + 1) + '/' + 
-           resultado.getFullYear();
+      var caja = document.getElementById("mostrar");
+      mostrar.style.display = "none";
+  
+  } 
 
-  document.getElementById('fFinal').innerHTML = resulta;
+
+function calcularHabiles() {
+
+  var fInicial = document.getElementById('fInicial').value;
+  var fecha = Date.parse(fInicial);
+
+  var nDias = parseInt(document.getElementById('dias').value);
+
+  //dias a sumar mas un día para no contar el mismo día
+  var dias = parseInt(nDias)+1;
+  //la fecha
+  var fechaFin = new Date(fInicial);
+  //nueva fecha sumada
+  var fin = addWeekDays(new Date(fecha), dias); 
+
+  resultado = fin.getDate() + '/' +
+  (fin.getMonth() + 1) + '/' + 
+  fin.getFullYear();
+
+  document.getElementById('fFinal').innerHTML = resultado;
   var caja = document.getElementById("mostrar");
   mostrar.style.display = "block";
 
-  }
-
-function calculaHabiles(dInicio, nDias, dFeriados) {
-  let diaPropuesto = new Date(dInicio.getFullYear(), dInicio.getMonth(), dInicio.getDate());
-  let i = 1;
-  while (nDias > 0 ) {
-      let festivo = false;
-      diaPropuesto = new Date(dInicio.getFullYear(), dInicio.getMonth(), dInicio.getDate() + i);
-      if (diaPropuesto.getDay() > 0 && diaPropuesto.getDay() < 6) {
-
-          let m = diaPropuesto.getMonth();
-          let dia = diaPropuesto.getDate();
-
-          for (let d in dFeriados[m]) {
-              if (dia === dFeriados[m][d]) {
-                  festivo = true;
-                  break;
-              }
-          } 
-
-          if (!festivo) {
-              nDias--;
-          }
-      }
-      i++;
-  } 
-  return diaPropuesto;
-} 
-
-
+}
 
 
