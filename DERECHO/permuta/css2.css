@@ -144,6 +144,12 @@ a {
   .rosa{
     color: #d1739f;
   }
+
+  .fdo-rosa{
+    background-color: #d1739f;
+    color:white;
+  }
+
   .jumbotron.rosa-fdo{
     background-color: #d1739f;
   }
