@@ -17,7 +17,7 @@ item.addEventListener('click',activarLink)
 )
 
 
-// Typeado
+// -------------------- Typeado ------------------- // 
 var TxtType = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
