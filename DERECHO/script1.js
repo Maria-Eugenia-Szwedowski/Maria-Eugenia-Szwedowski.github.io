@@ -6,7 +6,7 @@ const addWeekDays = (startDate, count) =>
       date = new Date(date.setDate(date.getDate() + (date.getDay() / 6 + 1) ));
     return date;
      }, startDate);
-
+ 
 
   function limpiar() {
       document.getElementById('fInicial').innerHTM= '' ;
