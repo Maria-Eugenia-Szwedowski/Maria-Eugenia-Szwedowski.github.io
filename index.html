@@ -31,6 +31,8 @@
     <title>Curriculum of María Eugenia Szwedowski</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    
     <style>
         body {
             font-family: 'Merriweather', serif;
@@ -149,16 +151,131 @@
                 text-align: center;
             }
         }
+
+        .botonesVerde {
+            display: inline-block;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: 10px 20px;
+            font-size: 16px;
+            line-height: 1.5;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #28a745; /* Verde Bootstrap */
+            border-color: #28a745;
+            transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .botonesVerde:hover {
+            background-color: #218838; /* Color más oscuro en hover */
+            border-color: #1e7e34;
+        }
+
+        .botonesVerde:active {
+            background-color: #1e7e34;
+            border-color: #1c7430;
+            transform: scale(0.98);
+        }
+
+        .botonesVerde:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+        }
+
+        .botonesVioleta {
+            display: inline-block;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: 10px 20px;
+            font-size: 16px;
+            line-height: 1.5;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #6f42c1; /* Violeta Bootstrap */
+            border-color: #6f42c1;
+            transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .botonesVioleta:hover {
+            background-color: #5936a8; /* Color más oscuro en hover */
+            border-color: #4e2e91;
+        }
+
+        .botonesVioleta:active {
+            background-color: #4e2e91;
+            border-color: #452985;
+            transform: scale(0.98);
+        }
+
+        .botonesVioleta:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(111, 66, 193, 0.5);
+        }
+
+        .botonesRosa {
+            display: inline-block;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: 10px 20px;
+            font-size: 16px;
+            line-height: 1.5;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #d63384; /* Rosa Bootstrap */
+            border-color: #d63384;
+            transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .botonesRosa:hover {
+            background-color: #b82d72; /* Color más oscuro en hover */
+            border-color: #a02665;
+        }
+
+        .botonesRosa:active {
+            background-color: #a02665;
+            border-color: #8a1f58;
+            transform: scale(0.98);
+        }
+
+        .botonesRosa:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(214, 51, 132, 0.5);
+        }
+
+
     </style>
 </head>
 <body>
     
 
-    <div class="container">
-        <button id="botonPDF" onclick="descargarPDF()">Descargar PDF</button>
+    <div class="container" >
+        <button id="botonPDF" class="botonesVioleta" onclick="descargarPDF()">
+            Download PDF
+        </button>
+        
+        <button class="botonesRosa" onclick="window.location.href='cv.html'">
+            CV Spanish
+        </button>
+        
+
         <h1>MARÍA EUGENIA SZWEDOWSKI</h1>
-<h2 class="h2-cv">Curriculum Vitae </h2>
-<div class="info">
+        <h2 class="h2-cv">Curriculum Vitae </h2>
+        <div class="info">
     
     <p><strong>Address:</strong> Colonia 1618 Ap 002, Montevideo</p>
     <p><strong>Date of Birth:</strong> 16/11/1987</p>
