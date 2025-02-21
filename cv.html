@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="María Eugenia Szwedowski">
+    <meta name="description" content="Currículum vitae de María Eugenia Szwedowski, Técnica Electromecánica en Mantenimiento Industrial, estudiante de Derecho, Ingeniería Tecnológica en Electrotécnia y especialista en instalaciones eléctricas industriales.">
+    <meta name="keywords" content="Currículum, María Eugenia Szwedowski, Ingeniera Tecnológica, Electrotécnia, Derecho, Instalaciones Eléctricas">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta name="bingbot" content="index, follow">
+    <meta property="og:title" content="Currículum de María Eugenia Szwedowski">
+    <meta property="og:description" content="Experiencia y formación de María Eugenia Szwedowski en electrotecnia y derecho.">
+    <meta property="og:image" content="/img/candidate.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://maria-eugenia-szwedowski.github.io/">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="application-name" content="Currículum de María Eugenia Szwedowski">
+    <meta name="generator" content="HTML5">
+    <meta name="language" content="es">
+    <meta name="copyright" content="© 2025 María Eugenia Szwedowski">
+    <meta name="distribution" content="global">
+    <meta name="rating" content="general">
+    <meta name="referrer" content="no-referrer">
+    <meta name="expires" content="never">
+    <meta name="canonical" content="https://maria-eugenia-szwedowski.github.io">
+    <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+
+    
+    <title>Curriculum Vitae de María Eugenia Szwedowski</title>
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            width: 90vw;
+            max-width: 1000px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            font-family: 'Courier New', monospace;
+            color: #333;
+            text-align: center;
+        }
+        h2 {
+            border-bottom: 2px solid black;
+            padding-bottom: 5px;
+        }
+        .info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            font-family: 'Courier New', monospace;
+        }
+        .info p {
+            width: 48%;
+            margin: 5px 0;
+        }
+        .justificado {
+            font-family: 'Merriweather', serif;
+            text-align: justify;
+            line-height: 1.5;
+            border-bottom: 0.1px solid rgb(221, 221, 221);
+            padding-bottom: 10px;
+            text-indent: 2.5em;
+            font-style: italic;
+            color: #b1b1b1;
+        }
+        .justificado2 {
+            font-family: 'Merriweather', serif;
+            text-align: justify;
+            border-bottom: 0.1px solid rgb(221, 221, 221);
+            padding-bottom: 10px;
+            font-style: italic;
+            color: #b1b1b1;
+        }
+        .tablaInterno {
+            font-family: 'Courier New', monospace;
+            text-align: center;
+        }
+        .h2-cv {
+            background-color: #6e6e6e; /* Gris oscuro */
+            color: white; /* Texto en blanco */
+            padding: 10px; /* Espaciado interno */
+            text-align: center; /* Centrar el texto */
+            margin: 0; /* Eliminar márgenes extra */
+            border: none; /* Eliminar bordes */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+            font-family: 'Arial', serif;
+        }
+        table th, table td {
+            border-bottom: 0.1px solid rgb(221, 221, 221);
+            padding: 5px;
+            text-align: left;
+        }
+        table th {
+            background-color: #ecebeb;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-family: 'Merriweather', serif;
+        }
+        table td:first-child { 
+            font-weight: bold; /* Solo la primera columna en negrita */
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        ul li a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+        @media print {
+            body {
+                background: none;
+            }
+            .container {
+                box-shadow: none;
+            }
+        }
+        @media (max-width: 600px) {
+            .info p {
+                width: 100%;
+            }
+            table, th, td {
+                display: block;
+                width: 100%;
+            }
+            th {
+                text-align: center;
+            }
+        }
+
+        .botonesVerde {
+            display: inline-block;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: 10px 20px;
+            font-size: 16px;
+            line-height: 1.5;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #28a745; /* Verde Bootstrap */
+            border-color: #28a745;
+            transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .botonesVerde:hover {
+            background-color: #218838; /* Color más oscuro en hover */
+            border-color: #1e7e34;
+        }
+
+        .botonesVerde:active {
+            background-color: #1e7e34;
+            border-color: #1c7430;
+            transform: scale(0.98);
+        }
+
+        .botonesVerde:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+        }
+
+        .botonesVioleta {
+            display: inline-block;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: 10px 20px;
+            font-size: 16px;
+            line-height: 1.5;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #6f42c1; /* Violeta Bootstrap */
+            border-color: #6f42c1;
+            transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .botonesVioleta:hover {
+            background-color: #5936a8; /* Color más oscuro en hover */
+            border-color: #4e2e91;
+        }
+
+        .botonesVioleta:active {
+            background-color: #4e2e91;
+            border-color: #452985;
+            transform: scale(0.98);
+        }
+
+        .botonesVioleta:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(111, 66, 193, 0.5);
+        }
+
+        .botonesRosa {
+            display: inline-block;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            vertical-align: middle;
+            cursor: pointer;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: 10px 20px;
+            font-size: 16px;
+            line-height: 1.5;
+            border-radius: 5px;
+            color: #fff;
+            background-color: #d63384; /* Rosa Bootstrap */
+            border-color: #d63384;
+            transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .botonesRosa:hover {
+            background-color: #b82d72; /* Color más oscuro en hover */
+            border-color: #a02665;
+        }
+
+        .botonesRosa:active {
+            background-color: #a02665;
+            border-color: #8a1f58;
+            transform: scale(0.98);
+        }
+
+        .botonesRosa:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(214, 51, 132, 0.5);
+        }
+
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="container" >
+        <button id="botonPDF" class="botonesVioleta" onclick="descargarPDF()">
+            Descargar PDF
+        </button>
+        
+        <button class="botonesRosa" onclick="window.location.href='index.html'">
+            CV Inglés
+        </button>
+
+        <h1>MARÍA EUGENIA SZWEDOWSKI</h1>
+        <h2 class="h2-cv">Curriculum Vitae</h2>
+        <div class="info">
+            
+            <p><strong>Dirección:</strong> Colonia 1618 Ap 002, Montevideo</p>
+            <p><strong>Fecha de Nacimiento:</strong> 16/11/1987</p>
+            <p><strong>Teléfono:</strong> +598 2401 79 51</p>
+            <p><strong>Celular:</strong> +598 91 074 131</p>
+        </div>
+
+        <h2>Experiencia Laboral Más Reciente</h2>
+        <p class="justificado">He trabajado como operadora inmobiliaria y gestora de datos en LALK Negocios Inmobiliarios, gestionando trámites con entidades gubernamentales, administrando datos de clientes mediante planillas electrónicas y brindando asesoramiento profesional en ventas y alquileres. También he participado en remates para el Banco Hipotecario del Uruguay y la Agencia Nacional de Vivienda. <br></p>
+        <p class="justificado">En los últimos años, me he enfocado en el área eléctrica, realizando trabajos independientes, como la fabricación y venta de soldadoras de punto y trabajos eléctricos residenciales. Mi experiencia práctica se refleja en mi portafolio: <a href="https://sites.google.com/view/szwedowski" target="_blank">Portafolio</a></p>
+
+        <h2>EXPERIENCIA LABORAL</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Desde</th>
+                    <th>Hasta</th>
+                    <th>Empresa</th>
+                    <th>Cargo</th>
+                    <th>Observaciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>01/07/2011</td>
+                    <td>26/10/2015</td>
+                    <td class="tablaInterno">Remates Extrajudiciales</td>
+                    <td class="tablaInterno">Rematador Público y Corredor Inmobiliario</td>
+                    <td class="justificado2">Realización de remates para Banco Hipotecario del Uruguay y Agencia Nacional de Vivienda.</td>
+                </tr>
+                <tr>
+                    <td>24/08/2007</td>
+                    <td>26/10/2015</td>
+                    <td class="tablaInterno">LALK Negocios Inmobiliarios</td>
+                    <td class="tablaInterno">Operador Inmobiliario</td>
+                    <td class="justificado2">Gestión comercial, promoción, asesoramiento y atención al cliente.</td>
+                </tr>
+                <tr>
+                    <td>30/04/2007</td>
+                    <td>15/05/2007</td>
+                    <td class="tablaInterno">INDUTOP SA</td>
+                    <td class="tablaInterno">Asistente en Ventas</td>
+                    <td class="justificado2">Contrato temporal de suplencia.</td>
+                </tr>
+                <tr>
+                    <td>08/02/2006</td>
+                    <td>04/11/2006</td>
+                    <td class="tablaInterno">TATA SA</td>
+                    <td class="tablaInterno">Cajera</td>
+                    <td class="justificado2">Atención al público, caja e inventarios.</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    <h2>CARRERAS DE GRADO</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Año</th>
+            <th>Curso</th>
+            <th>Institución</th>
+            <th>Observaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2024 - 2020</td>
+            <td>Ingeniero Tecnológico en Electrotecnia, Plan 2020</td>
+            <td class="tablaInterno">Instituto Tecnológico Superior</td>
+            <td class="justificado2">Actualmente cursando.</td>
+        </tr>
+        <tr>
+            <td>2024 - 2022</td>
+            <td>Abogacía, Plan 2016</td>
+            <td class="tablaInterno">FDER, Universidad de la República</td>
+            <td class="justificado2">Actualmente cursando materias, retomando carrera con plan nuevo.</td>
+        </tr>
+        <tr>
+            <td>2013 - 2010</td>
+            <td>Doctor en Derecho, Plan 86</td>
+            <td class="tablaInterno">FDER, Universidad de la República</td>
+            <td class="justificado2">Cursado y finalizado hasta segundo año completo.</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2>CURSOS TÉCNICOS (CT)</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Año</th>
+            <th>Curso</th>
+            <th>Institución</th>
+            <th>Observaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2022 - 2020</td>
+            <td>Técnico Mantenimiento Industrial</td>
+            <td class="tablaInterno">UTU, Escuela Técnica Arroyo Seco</td>
+            <td class="justificado2">Neumática, Hidráulica, Eléctrica.</td>
+        </tr>
+        <tr>
+            <td>2014</td>
+            <td>Operador Inmobiliario</td>
+            <td class="tablaInterno">UTU, Escuela Comercial Prado</td>
+            <td class="justificado2">Comercial.</td>
+        </tr>
+        <tr>
+            <td>2012 - 2010</td>
+            <td>Rematador Público</td>
+            <td class="tablaInterno">UTU, Escuela Comercial Prado</td>
+            <td class="justificado2">Comercial.</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>FORMACIÓN PROFESIONAL SUPERIOR (FPS)</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Año</th>
+            <th>Curso</th>
+            <th>Institución</th>
+            <th>Observaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2019 - 2017</td>
+            <td>Operador en Instalaciones Eléctricas</td>
+            <td class="tablaInterno">UTU, Escuela Técnica de la Construcción IEC</td>
+            <td class="justificado2">Eléctrica.</td>
+        </tr>
+        <tr>
+            <td>2016</td>
+            <td>Carpintería</td>
+            <td class="tablaInterno">UTU, Escuela Técnica de la Construcción IEC</td>
+            <td class="justificado2">Talleres.</td>
+        </tr>
+        <tr>
+            <td>2010 - 2009</td>
+            <td>Auxiliar Administrativo Contable Calificado</td>
+            <td class="tablaInterno">UTU, Escuela Comercial Prado</td>
+            <td class="justificado2">Administración.</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2>CURSOS TÉCNICOS PROFESIONALES NORMAS ISO</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Año</th>
+            <th>Curso</th>
+            <th>Institución</th>
+            <th>Observaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2023</td>
+            <td>Inspector Ultrasonido Nivel 1, INTI</td>
+            <td class="tablaInterno">INTI Argentina</td>
+            <td class="justificado2">NM. ISO 9712</td>
+        </tr>
+        <tr>
+            <td>2021</td>
+            <td>Inspector Partículas Magnéticas Nivel 2</td>
+            <td class="tablaInterno">LSQA & UTU</td>
+            <td class="justificado2">ASTM E 165 NDT, ISO 9712</td>
+        </tr>
+        <tr>
+            <td>2021</td>
+            <td>Inspector Líquidos Penetrantes Nivel 2</td>
+            <td class="tablaInterno">LSQA & UTU</td>
+            <td class="justificado2">ASTM E 1444 NDT, ISO 9712</td>
+        </tr>
+        <tr>
+            <td>2021</td>
+            <td>ITS Centro: CAD 2D 3D - CNC Torno Fresa</td>
+            <td class="tablaInterno">Instituto Tecnológico Superior, Arias Balparda. Centro Técnico.</td>
+            <td class="justificado2">ISO 9001 - Code G (RS-274) CNC y AutoCAD</td>
+        </tr>
+    </tbody>
+</table>
+
+
+<h2>CURSOS TÉCNICOS PROFESIONALES</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Año</th>
+            <th>Curso</th>
+            <th>Institución</th>
+            <th>Observaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2016</td>
+            <td>Desarrollo Web con MySQL, PHP y Java</td>
+            <td class="tablaInterno">Ametrano y Asociados</td>
+            <td class="justificado2">Beca otorgada por INEFOP</td>
+        </tr>
+        <tr>
+            <td>2012</td>
+            <td>Diseño Web con Suite Adobe</td>
+            <td class="tablaInterno">Instituto BIOS</td>
+            <td class="justificado2">-</td>
+        </tr>
+        <tr>
+            <td>2011</td>
+            <td>Auxiliar Administrativo con Memory</td>
+            <td class="tablaInterno">Instituto BIOS</td>
+            <td class="justificado2">-</td>
+        </tr>
+        <tr>
+            <td>2010</td>
+            <td>Dactilografía</td>
+            <td class="tablaInterno">Instituto BIOS</td>
+            <td class="justificado2">-</td>
+        </tr>
+        <tr>
+            <td>2010</td>
+            <td>Operador PC</td>
+            <td class="tablaInterno">Instituto BIOS</td>
+            <td class="justificado2">-</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>FORMACIÓN BÁSICA</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Año</th>
+            <th>Curso</th>
+            <th>Institución</th>
+            <th>Observaciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>2007</td>
+            <td>Bachillerato Orientación Derecho</td>
+            <td class="tablaInterno">Liceo Nro 4, Francisco Bauzá</td>
+            <td class="justificado2">Plan 1976</td>
+        </tr>
+        <tr>
+            <td>2012 - 2007</td>
+            <td>Seminarios Inmobiliarios y Derecho (Varios)</td>
+            <td class="tablaInterno">iCIU - Cámara Inmobiliaria del Uruguay</td>
+            <td class="justificado2">Seminarios</td>
+        </tr>
+    </tbody>
+</table>
+
+<h2>MISCELÁNEA E IDIOMAS</h2>
+<table style="width: 100%; border-collapse: collapse; text-align: center;">
+    <thead>
+        <tr>
+            <th style="width: 50%; border: 1px solid rgb(255, 255, 255);">MISCELÁNEA</th>
+            <th style="width: 50%; border: 1px solid rgb(255, 255, 255);">IDIOMAS</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Año</th>
+                            <th>Experiencia</th>
+                            <th>Observaciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2021</td>
+                            <td class="tablaInterno">Emprendedor adulto-mayor</td>
+                            <td class="justificado2">Asesoramiento y gestión inicial de plataformas comerciales para promoción en Google y MercadoLibre.</td>
+                        </tr>
+                        <tr>
+                            <td>2017</td>
+                            <td class="tablaInterno">Plan IBIRAPITÁ</td>
+                            <td class="justificado2">Asesoramiento en uso de Tablets para adultos mayores. Presencial.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Idioma</th>
+                            <th>Nivel</th>
+                            <th>Institución</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Portugués</td>
+                            <td>B1 (2 años)</td>
+                            <td class="tablaInterno">ICUB</td>
+                        </tr>
+                        <tr>
+                            <td>Francés</td>
+                            <td>B1 (3 semestres)</td>
+                            <td class="tablaInterno">Facultad de Letras, UDELAR</td>
+                        </tr>
+                        <tr>
+                            <td>Italiano</td>
+                            <td>A2 (2 semestres)</td>
+                            <td class="tablaInterno">-</td>
+                        </tr>
+                        <tr>
+                            <td>Chino</td>
+                            <td>B1 (3 años)</td>
+                            <td class="tablaInterno">-</td>
+                        </tr>
+                        <tr>
+                            <td>Inglés</td>
+                            <td>Comercial (1 año)</td>
+                            <td class="tablaInterno">Alianza Uruguay - EE.UU.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+<script>
+    async function descargarPDF() {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF({
+            orientation: "portrait",
+            unit: "mm",
+            format: "a4"
+        });
+
+        const contenido = document.querySelector('.container');
+        const boton = document.getElementById('botonPDF'); // Asegúrate de que tu botón tenga este ID
+
+        // Ocultar el botón antes de la captura
+        boton.style.visibility = 'hidden';
+
+        // Esperar un pequeño tiempo para asegurarse de que se oculta antes de la captura
+        await new Promise(resolve => setTimeout(resolve, 100));
+
+        const canvas = await html2canvas(contenido, { scale: 2 });
+
+        // Volver a mostrar el botón después de la captura
+        boton.style.visibility = 'visible';
+
+        const imgData = canvas.toDataURL('image/png');
+        const imgWidth = 210; // Ancho A4 en mm
+        const pageHeight = 297; // Alto A4 en mm
+        const imgHeight = (canvas.height * imgWidth) / canvas.width;
+
+        let y = 0;
+        while (y < imgHeight) {
+            doc.addImage(imgData, 'PNG', 0, -y, imgWidth, imgHeight);
+            y += pageHeight;
+            if (y < imgHeight) doc.addPage();
+        }
+
+        doc.save('Curriculum.pdf');
+    }
+</script>
+
+<!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/59891074131" target="_blank" class="btn btn-success btn-lg whatsapp-float">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Estilos para el botón flotante -->
+<style>
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: #25d366;
+        color: white;
+        border-radius: 50%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+        text-decoration: none;
+        font-size: 30px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .whatsapp-float:hover {
+        transform: scale(1.1);
+        background-color: #1ebe5d;
+    }
+</style>
+
+<!-- Enlace a Font Awesome para el ícono de WhatsApp -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+
+
+</body>
+</html>
