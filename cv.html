@@ -627,9 +627,11 @@
 
         const contenido = document.querySelector('.container');
         const boton = document.getElementById('botonPDF'); // Asegúrate de que tu botón tenga este ID
+        const boton2 = document.getElementById('botonOcultar'); // Asegúrate de que tu botón tenga este ID
 
         // Ocultar el botón antes de la captura
         boton.style.visibility = 'hidden';
+        boton2.style.visibility = 'hidden';
 
         // Esperar un pequeño tiempo para asegurarse de que se oculta antes de la captura
         await new Promise(resolve => setTimeout(resolve, 100));
@@ -638,6 +640,7 @@
 
         // Volver a mostrar el botón después de la captura
         boton.style.visibility = 'visible';
+        boton2.style.visibility = 'visible';
 
         const imgData = canvas.toDataURL('image/png');
         const imgWidth = 210; // Ancho A4 en mm
